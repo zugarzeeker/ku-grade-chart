@@ -41,5 +41,44 @@ profile = profile.join('\n');
 
 var border = '===============================\n';
 
-alert(profile + border + result);
+var canvas = document.createElement("canvas");
+canvas.id = "myChart";
+canvas.width = 400;
+canvas.height = 400;
+document.body.appendChild(canvas);
+
+var js = document.createElement("script");
+js.type = "text/javascript";
+js.src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.3/Chart.bundle.min.js";
+document.body.appendChild(js);
+
+js.onload = function() {
+	var canvas = document.getElementById("myChart");
+	var ctx = document.getElementById("myChart").getContext("2d");	
+	var myChart = new Chart(ctx, {
+	    type: 'bar',
+	    data: {
+	    	labels: typeGrade,
+	   
+	        datasets: [{
+	            label: '# of Grade',
+	            backgroundColor: "rgba(255,99,132,0.2)",
+	            borderColor: "rgba(255,99,132,1)",
+	            borderWidth: 1,
+	            hoverBackgroundColor: "rgba(255,99,132,0.4)",
+	            hoverBorderColor: "rgba(255,99,132,1)",
+	            data: typeGrade.map(function(grade) {return countGrade[grade]})
+	        }]
+	    },
+	    options: {
+	        scales: {
+	            yAxes: [{
+	                ticks: {
+	                    beginAtZero:true
+	                }
+	            }]
+	        }
+	    }
+	});
+}
 
