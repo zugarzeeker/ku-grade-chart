@@ -1,11 +1,15 @@
-<canvas id="myChart" width="400" height="400"></canvas>
+<div></div>
 <script>
-	var js = document.createElement("script");
-	js.type = "text/javascript";
-	js.src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.3/Chart.bundle.min.js";
-	document.body.appendChild(js);
-</script>
-<script>
+var canvas = document.createElement("canvas");
+canvas.id = "myChart";
+canvas.width = 400;
+canvas.height = 400;
+document.body.appendChild(canvas);
+
+var js = document.createElement("script");
+js.type = "text/javascript";
+js.src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.3/Chart.bundle.min.js";
+document.body.appendChild(js);
 
 js.onload = function() {
 	var canvas = document.getElementById("myChart");
@@ -35,5 +39,6 @@ js.onload = function() {
 	    }
 	});
 }
+
 
 </script>
