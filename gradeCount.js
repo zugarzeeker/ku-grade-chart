@@ -41,12 +41,25 @@ profile = profile.join('\n');
 
 var border = '===============================\n';
 
+var chart = document.createElement('tr');
 var canvas = document.createElement("canvas");
 canvas.id = "myChart";
 canvas.width = 400;
 canvas.height = 400;
-document.body.appendChild(canvas);
+canvas.style = "width: 100%;"
 
+var table = document.createElement('table');
+table.border = 0; table.width = "100%"; table.cellspacing=0; table.className="table";
+table.style="border: solid 1px black; width:100%;";
+table.appendChild(canvas);
+var td = document.createElement('td');
+table.appendChild(td);
+chart.appendChild(table);
+
+var normalTables = document.getElementsByTagName('tbody')[5].getElementsByTagName('table');
+normalTables[1].parentElement.appendChild(chart);
+normalTables[0].style = "border-left: solid 1px black;";
+document.getElementsByTagName('table')[5].style = "border-bottom: none;";
 var js = document.createElement("script");
 js.type = "text/javascript";
 js.src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.3/Chart.bundle.min.js";
@@ -81,4 +94,3 @@ js.onload = function() {
 	    }
 	});
 }
-
