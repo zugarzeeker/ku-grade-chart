@@ -1,2 +1,2 @@
-# grade-chart-transcript
-show grade with beautiful chart 
+# ku-grade-chart
+show grade with beautiful chart in transcript
