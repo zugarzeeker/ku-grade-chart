@@ -70,7 +70,7 @@ js.onload = function() {
       title: {
         display: true,
         position: 'bottom',
-        text: `cum. G.P.A. = ${gpa.toFixed(2)}`
+        text: `cum. G.P.A. = ${gpa.toFixed(2)} credit = ${creditAll}`
       },
       scales: {
         yAxes: [{
