@@ -1,4 +1,5 @@
 var typeGrade = ['A', 'B+', 'B', 'C+', 'C', 'D+', 'D', 'F', 'W', 'P'];
+var valueOfGrade = [4.0, 3.5, 3.0, 2.5, 2.0, 1.5, 1.0, 0.0, undefined, undefined];
 var countGrade = {};
 typeGrade.forEach(function(x) {
   countGrade[x] = 0;
@@ -11,6 +12,16 @@ for (var i = 0, size = cells.length; i < size; i++) {
     countGrade[text] += parseInt(cells[i+1].innerHTML);
   }
 }
+
+var sumOfMul = typeGrade.reduce((prev, curr, index) => {
+  if (valueOfGrade[index]) return prev + countGrade[curr]*valueOfGrade[index];
+  else return prev;
+}, 0);
+var creditAll = typeGrade.reduce((prev, curr, index) => {
+  if (valueOfGrade[index]) return prev + countGrade[curr];
+  else return prev;
+}, 0);
+var gpa = sumOfMul / creditAll;
 
 var border = '===============================\n';
 
@@ -56,6 +67,11 @@ js.onload = function() {
       }]
     },
     options: {
+      title: {
+        display: true,
+        position: 'bottom',
+        text: `cum. G.P.A. = ${gpa.toFixed(2)}`
+      },
       scales: {
         yAxes: [{
           ticks: {
