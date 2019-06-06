@@ -2,7 +2,8 @@
 show grade with beautiful chart in transcript
 
 ## Screenshot
-![beautiful grade chart](./ku-grade-chart-screenshot.png)
+
+<img src="./ku-grade-chart-screenshot.png" alt="beautiful grade chart" width="500"/>
 
 ## How to use ?
 1. copy script from [here](http://bit.ly/ku-grade-chart-script)
