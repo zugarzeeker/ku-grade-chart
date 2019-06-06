@@ -1,7 +1,7 @@
 # ku-grade-chart
 show grade with beautiful chart in transcript
 
-## How to use
+## How to use ?
 1. copy script from [here](https://raw.githubusercontent.com/zugarzeeker/ku-grade-chart/master/showChartByCredit.js)
 2. right click @grade report page (std.regis)
 3. inspect
