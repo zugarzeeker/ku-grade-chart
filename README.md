@@ -3,7 +3,8 @@ show grade with beautiful chart in transcript
 
 ## Screenshot
 
-<img src="./ku-grade-chart-screenshot.png" alt="beautiful grade chart" width="500"/>
+
+[Imgur](https://bitly.com/ku-grade-chart-screenshot)
 
 ## How to use ?
 1. copy script from [here](http://bit.ly/ku-grade-chart-script)
