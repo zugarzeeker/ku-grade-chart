@@ -9,7 +9,8 @@ var cells = document.getElementsByClassName('tr');
 for (var i = 0, size = cells.length; i < size; i++) {
   var text = cells[i].innerHTML;
   if(i % 4 === 2) {
-    countGrade[text] += parseInt(cells[i+1].innerHTML);
+    const fixGradeFFormat = (str) => str.replace('(', '').replace(')', '')
+    countGrade[text] += parseInt(fixGradeFFormat(cells[i+1].innerHTML));
   }
 }
 
