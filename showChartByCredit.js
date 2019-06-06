@@ -14,7 +14,7 @@ for (var i = 0, size = cells.length; i < size; i++) {
 }
 
 var sumOfMul = typeGrade.reduce((prev, curr, index) => {
-  if (valueOfGrade[index]) return prev + countGrade[curr]*valueOfGrade[index];
+  if (valueOfGrade[index] !== undefined) return prev + countGrade[curr]*valueOfGrade[index];
   else return prev;
 }, 0);
 var creditAll = typeGrade.reduce((prev, curr, index) => {
