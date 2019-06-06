@@ -1,4 +1,4 @@
-var typeGrade = ['A', 'B+', 'B', 'C+', 'C', 'D+', 'D', 'F', 'W', 'P'];
+var typeGrade = ['A', 'B+', 'B', 'C+', 'C', 'D+', 'D', 'F', 'W', 'P', 'N'];
 var valueOfGrade = [4.0, 3.5, 3.0, 2.5, 2.0, 1.5, 1.0, 0.0, undefined, undefined];
 var countGrade = {};
 typeGrade.forEach(function(x) {
