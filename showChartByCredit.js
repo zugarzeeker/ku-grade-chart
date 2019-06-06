@@ -18,7 +18,7 @@ var sumOfMul = typeGrade.reduce((prev, curr, index) => {
   else return prev;
 }, 0);
 var creditAll = typeGrade.reduce((prev, curr, index) => {
-  if (valueOfGrade[index]) return prev + countGrade[curr];
+  if (valueOfGrade[index] !== undefined) return prev + countGrade[curr];
   else return prev;
 }, 0);
 var gpa = sumOfMul / creditAll;
