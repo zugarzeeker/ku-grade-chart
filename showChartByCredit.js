@@ -58,7 +58,7 @@ js.onload = function() {
     data: {
       labels: typeGrade,
       datasets: [{
-        label: '# of Credit (by ZugarZeeker)',
+        label: '# of Credit (by ZugarZeeker @Cleverse)',
         backgroundColor: ['#14ACDE', '#06A199', '#32A42B','#B4CB01', '#FFE401', '#EA640B', '#D7031C', '#E2006C', '#A90C5D', '#7F378B'],
         borderColor: 'black',
         borderWidth: 1,
