@@ -12,4 +12,4 @@ show grade with beautiful chart in transcript
 4. click console
 5. paste & enter
 6. capture your grade chart
-7. share :)
+7. share [`https://bit.ly/ku-grade-chart-how-to`](bit.ly/ku-grade-chart-how-to) :)
