@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "KU Grade Chart",
+  "version": "0.2.0",
+  "description" : "ไปที่ https://stdregis.ku.ac.th/ -> รายงาน -> ผลการเรียน -> แคปอวดเพื่อน\nhttps://github.com/zugarzeeker/ku-grade-chart",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://stdregis.ku.ac.th/_Student_RptKu.php?mode=KU20"
+      ],
+      "js": ["content.js", "Chart.bundle.min.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icon.png"
+  }
+}
