@@ -6,7 +6,7 @@ ku-grade-chart
 <img src="http://bit.ly/screenshot-ku-grade-chart" alt="beautiful grade chart" width="500"/>
 
 ## วิธีการใช้งาน
-1. คัดลอกสคริปท์ที่ได้มาจาก[ลิงก์นี้](http://bit.ly/ku-grade-chart-script)
+1. คัดลอกสคริปท์ที่ได้มาจาก[ลิงค์นี้](http://bit.ly/ku-grade-chart-script)
 2. เข้า[เว็บรีจิส](stdregis.ku.ac.th) คลิกที่รายงานผลการเรียน
 3. กดปุ่ม F12
 4. เข้าไปที่หัวข้อ คอนโซล/Console
