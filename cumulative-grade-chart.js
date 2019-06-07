@@ -27,9 +27,19 @@ for (let i = 0; i < semesterRaws.length; i++) {
   semesters.push({
     title: formatTitle(semesterRaws[i].innerHTML),
     gpaCum: gpaList[i],
-    credit: creditList[i],
+    credit: creditList[i * 2 - 1],
   });
 }
+// const semesters = [
+//   { title: '2015/01', gpaCum: '4.00', credit: 15 },
+//   { title: '2015/02', gpaCum: '3.80', credit: 15 },
+//   { title: '2016/01', gpaCum: '3.40', credit: 15 },
+//   { title: '2016/02', gpaCum: '3.20', credit: 15 },
+//   { title: '2017/01', gpaCum: '3.00', credit: 15 },
+//   { title: '2017/02', gpaCum: '2.80', credit: 15 },
+//   { title: '2018/01', gpaCum: '2.50', credit: 15 },
+//   { title: '2018/02', gpaCum: '2.00', credit: 140 },
+// ];
 
 var border = '===============================\n';
 
@@ -70,7 +80,14 @@ js.onload = function() {
     data: {
       labels: semesters.map(s => s.title),
       datasets: [
+        // {
+        //   type: 'line',
+        //   backgroundColor: 'transparent',
+        //   borderColor: '#333',
+        //   data: semesters.map(s => s.gpaCum),
+        // },
         {
+          type: 'bar',
           label: '# of Cumulative GPA (by ZugarZeeker @Cleverse)',
           backgroundColor: [
             '#14ACDE',
